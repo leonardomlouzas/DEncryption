@@ -23,7 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #00000033;
   position: fixed;
   top: 0;
   left: 0;
@@ -60,6 +60,14 @@ main {
   width: 80vw;
 }
 
+#sub-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -67,13 +75,13 @@ main {
   margin: 10px 0px;
 }
 
-.buttons button {
+button {
   width: 200px;
   height: 50px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #00000033;
 }
 
 #button-encrypt {
@@ -115,9 +123,10 @@ main {
 }
 
 #text-after {
+  width: 100%;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #00000033;
 }
 
 @media (max-width: 520px) {
@@ -152,6 +161,11 @@ main {
     height: 100%;
     width: 70%;
     padding: 20px;
+  }
+
+  #sub-container {
+    height: 100%;
+    width: 30%;
   }
 
   #text-before {

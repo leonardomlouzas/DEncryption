@@ -24,11 +24,14 @@
         <div id="main-container">
             <textarea id=text-before name="text-before" placeholder="Type your text here"></textarea>
             <div class="buttons">
-                <button id="button-encrypt">Encrypt</button>
-                <button id="button-decrypt">Decrypt</button>
+                <button id="button-encrypt" onclick="encrypt()">Encrypt</button>
+                <button id="button-decrypt" onclick="decrypt()">Decrypt</button>
             </div>
         </div>
-        <textarea id=text-after name="text-after" placeholder="(D)encrypted text here"></textarea>
+        <div id="sub-container">
+            <textarea id=text-after name="text-after" placeholder="(D)encrypted text here"></textarea>
+            <button id="button-copy" onclick="copyText()">Copy</button>
+        </div>
         </div>
     </main>
 </body>
